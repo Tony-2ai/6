@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumos Team</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-center">
+            <img src="—Pngtree—bulb logo pictures_5461815.png" alt="Lumos Logo" class="logo">
+            <h1>Lumos</h1>
+            <marquee>Spreading Bright Ideas</marquee>
+        </div>
+        <div class="header-right">
+            <button class="leader-btn" onclick="showLeaders()">Leaders</button>
+             <a href="home2.html">
+            <button class="leader-btn" onclick="" >About engineers</button>
+        </a>
+        </div>
+    </header>
+
+    <div id="leaders-info" class="leaders-info" style="display:none;">
+        <h2>Leaders</h2>
+        <p>Captain: Jeseentha Francis</p>
+        <p>Vice Captain: Tony Gilson</p>
+    </div>
+
+    <main>
+        
+        <section class="group-members">
+            <h2>Group Members</h2>
+            <div class="members-list">
+                <div class="member" onclick="showMemberDetails('member1')">
+                    <img src="abu.jpg" alt="Member 1">
+                    <div id="member1-details" class="member-details" style="display: none;">
+                        <p>Name: Muhammed Abubakker</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: muhammedaboobakkerns@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/a_b_u_uu?igsh=MTF0OHBvNTQzbDVjeg==" target="_blank">Visit Profile</a></p>
+                    </div>
+
+                </div>
+                <div class="member" onclick="showMemberDetails('member2')">
+                    <img src="anton.png" alt="Member 2">
+                    <div id="member2-details" class="member-details" style="display: none;">
+                        <p>Name: Anton</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: panthamakkalanton444@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/_antonpgeorge_?igsh=emlqeXY3Zmhtb2xs" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+                <div class="member" onclick="showMemberDetails('member3')">
+                    <img src="25195 aamir copy (1).jpg" alt="Member 3">
+                    <div id="member3-details" class="member-details" style="display: none;">
+                        <p>Name: Aamir</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: aamirny443@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/_mhd_aamir_?igsh=MTAxN2xlNWVuaTVkdA==" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+                <div class="member" onclick="showMemberDetails('member4')">
+                    <img src="chriz.jpg" alt="Member 4">
+                    <div id="member4-details" class="member-details" style="display: none;">
+                        <p>Name: Cristeena Boby</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: cristeenaboby@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/_c.h.r.i_z_?igsh=MXZqbnFqOHo0NHp6ag==" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+                <div class="member" onclick="showMemberDetails('member5')">
+                    <img src="jaseentha.jpg" alt="Member 5">
+                    <div id="member5-details" class="member-details" style="display: none;">
+                        <p>Name: Jeseentha Francis</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: jeseenthafrancis527@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/jeseentha_francis?igsh=MWFsa2c1dzRrZ29naw==" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+                <div class="member" onclick="showMemberDetails('member6')">
+                    <img src="kutty.jpg" alt="Member 6">
+                    <div id="member6-details" class="member-details" style="display: none;">
+                        <p>Name: GeorgeKutty John</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: georgekuttyjohn62@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/__g.rge_?igsh=ZmV6MGl0dmk0MGZq" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+                <div class="member" onclick="showMemberDetails('member7')">
+                    <img src="rose1.jpg" alt="Member 7">
+                    <div id="member7-details" class="member-details" style="display: none;">
+                        <p>Name: Rose Soyuse</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: rosesoyuse@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/rose_soyuse?igsh=MWllaGh2cjAwcnVt" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+                <div class="member" onclick="showMemberDetails('member8')">
+                    <img src="tony.jpg" alt="Member 8">
+                    <div id="member8-details" class="member-details" style="display: none;">
+                        <p>Name: Tony Gilson</p>
+                        <p>Class: CSE A</p>
+                        <p>Email: tonygilson2005@gmail.com</p>
+                        <p>Instagram: <a href="https://www.instagram.com/_tony.gilson/profilecard/?igsh=dzQ5ajJvOWcydXo3" target="_blank">Visit Profile</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showMemberDetails(member) {
+            const details = document.querySelectorAll('.member-details');
+            details.forEach(detail => detail.style.display = 'none');
+            document.getElementById(`${member}-details`).style.display = 'block';
+        }
+
+        function showLeaders() {
+            const leadersInfo = document.getElementById('leaders-info');
+            leadersInfo.style.display = leadersInfo.style.display === 'none' ? 'block' : 'none';
+            const details = document.querySelectorAll('.member-details');
+            details.forEach(detail => detail.style.display = 'none');
+        }
+    </script>
+</body>
+</html>
