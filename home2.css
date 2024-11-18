@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffde7; /* Light yellow background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff176; /* Light yellow header */
+    padding: 20px;
+    text-align: center;
+}
+
+.header-center h1 {
+    margin: 0;
+    color: #f57f17; /* Dark yellow color */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f57f17; /* Dark yellow links */
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #f57f17; /* Dark yellow color */
+}
+
+.fields .field {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.famous-engineers ul, .fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.famous-engineers li, .fun-facts li {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #fff176; /* Light yellow footer */
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
